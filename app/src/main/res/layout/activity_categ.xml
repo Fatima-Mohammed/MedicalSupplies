@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".categ">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingVertical="@android:dimen/notification_large_icon_width"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-131dp">
+
+        <ImageButton
+            android:id="@+id/doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00F7F2F2"
+            android:onClick="doctor"
+            app:srcCompat="@drawable/pagedoctor" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="                                        ARE YOU DOCTOR" />
+
+        <ImageButton
+            android:id="@+id/patent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FAF5F5"
+            android:onClick="patent"
+            app:srcCompat="@drawable/pagepatent" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="                            ARE YOU PATINT"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/donar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FAF7F7"
+            android:onClick="donar"
+            app:srcCompat="@drawable/pagedonar" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@android:dimen/app_icon_size"
+            android:text="                   ARE YOU DONOR"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/beneficiary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00F8F3F3"
+            android:onClick="beneficiary"
+            app:srcCompat="@drawable/pagebenefashare" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="                             ARE YOU BENEFICIARY"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

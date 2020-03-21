@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.medicalsupplies">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".show_user_data"></activity>
+        <activity android:name=".verification_user" />
+        <activity android:name=".mumaris" />
+        <activity android:name=".benefichary_show_donar" />
+        <activity android:name=".patient_select_tima" />
+        <activity android:name=".patiene_select_doctor" />
+        <activity android:name=".patiene_select_city" />
+        <activity android:name=".Admain" />
+        <activity android:name=".Manage_request_beneficiary" />
+        <activity android:name=".Manage_request_donor" />
+        <activity android:name=".manage_request_patient" />
+        <activity android:name=".Manage_request_doctor" />
+        <activity android:name=".poles" />
+        <activity android:name=".about" />
+        <activity android:name=".myActions" />
+        <activity android:name=".beneficiary" />
+        <activity android:name=".patent" />
+        <activity android:name=".donar" />
+        <activity android:name=".doctor" />
+        <activity android:name=".categ" />
+        <activity android:name=".Signup" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>
